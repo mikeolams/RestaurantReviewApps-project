@@ -293,12 +293,15 @@ nav h1 a {
 }
 @media screen and (min-width:383px) {
   #restaurant-container {
-    padding: 5em 3% 0%;
+    padding: 7em 3% 0%;
   }
 }
 @media screen and (min-width:480px) {
   #breadcrumb li+li:before {
     padding: 8px;
+  }
+  #breadcrumb {
+    padding: 0.3em 2.1em 0.8em;
   }
   ul, li {
     font-size: 1.4em;
@@ -314,11 +317,6 @@ nav h1 a {
   }
   .filter-options select {
     width: 200px;
-  }
-}
-@media screen and (min-width:529px) {
-  #restaurant-container {
-    padding: 3em 3% 0%;
   }
 }
 @media screen and (min-width:650px) {
