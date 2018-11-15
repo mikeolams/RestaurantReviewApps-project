@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!-- <meta charset="utf-8"> -->
   <!-- <meta name="description" content=""> -->
@@ -18,7 +18,7 @@
   </header>
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div aria-label="resturant map location" id="map" role="application"></div>
     </section>
     <section>
       <div class="filter-options">
@@ -43,11 +43,11 @@
   </script> <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
    
   <script>
-  if('serviceWorker' in navigator) {
-   navigator.serviceWorker
-            .register('/sw.js', {scope:'/mws-restaurant-stage-1/'})
-            .then(function() { console.log("Service Worker Registered"); });
-  }
+      if('serviceWorker' in navigator) {
+       navigator.serviceWorker
+                .register('/sw.js', {scope:'/mws-restaurant-stage-1/'})
+                .then(function() { console.log("Service Worker Registered"); });
+      }
   </script>
   <footer id="footer">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
